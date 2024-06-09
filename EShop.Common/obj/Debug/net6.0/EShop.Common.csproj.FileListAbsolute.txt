@@ -1,0 +1,12 @@
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\bin\Debug\net6.0\EShop.Common.deps.json
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\bin\Debug\net6.0\EShop.Common.dll
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\bin\Debug\net6.0\EShop.Common.pdb
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\obj\Debug\net6.0\EShop.Common.csproj.AssemblyReference.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\obj\Debug\net6.0\EShop.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\obj\Debug\net6.0\EShop.Common.AssemblyInfoInputs.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\obj\Debug\net6.0\EShop.Common.AssemblyInfo.cs
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\obj\Debug\net6.0\EShop.Common.csproj.CoreCompileInputs.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\obj\Debug\net6.0\EShop.Common.dll
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\obj\Debug\net6.0\refint\EShop.Common.dll
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\obj\Debug\net6.0\EShop.Common.pdb
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EShop.Common\obj\Debug\net6.0\ref\EShop.Common.dll

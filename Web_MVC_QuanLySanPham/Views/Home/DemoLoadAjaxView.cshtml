@@ -1,0 +1,25 @@
+﻿@model List<Web_MVC_QuanLySanPham.ProductModels>
+<p> Dữ liệu đc gọi từ AJAX</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ProductID</th>
+            <th>CategoryID</th>
+            <th>ProductName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count > 0)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProductID</td>
+                    <td>@item.CategoryID</td>
+                    <td>@item.ProductName</td>
+
+                </tr>
+            }
+        }
+    </tbody>
+</table>

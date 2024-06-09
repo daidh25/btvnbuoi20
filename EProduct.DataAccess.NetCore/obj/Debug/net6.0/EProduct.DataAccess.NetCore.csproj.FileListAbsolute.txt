@@ -1,0 +1,17 @@
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\bin\Debug\net6.0\EProduct.DataAccess.NetCore.deps.json
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\bin\Debug\net6.0\EProduct.DataAccess.NetCore.runtimeconfig.json
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\bin\Debug\net6.0\EProduct.DataAccess.NetCore.dll
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\bin\Debug\net6.0\EProduct.DataAccess.NetCore.pdb
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\bin\Debug\net6.0\EShop.Common.dll
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\bin\Debug\net6.0\EShop.Common.pdb
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\EProduct.DataAccess.NetCore.csproj.AssemblyReference.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\EProduct.DataAccess.NetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\EProduct.DataAccess.NetCore.AssemblyInfoInputs.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\EProduct.DataAccess.NetCore.AssemblyInfo.cs
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\EProduct.DataAccess.NetCore.csproj.CoreCompileInputs.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\EProduct.DataAccess.NetCore.csproj.CopyComplete
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\EProduct.DataAccess.NetCore.dll
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\refint\EProduct.DataAccess.NetCore.dll
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\EProduct.DataAccess.NetCore.pdb
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\EProduct.DataAccess.NetCore.genruntimeconfig.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\EProduct.DataAccess.NetCore\obj\Debug\net6.0\ref\EProduct.DataAccess.NetCore.dll

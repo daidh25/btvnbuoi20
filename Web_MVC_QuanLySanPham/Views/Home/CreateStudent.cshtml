@@ -1,0 +1,213 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Web_MVC_QuanLySanPham.ProductModels>
+<style>
+    .row_marging {
+        margin-top: 5px;
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Welcome111</h1>
+</div>
+
+<div class="row">
+    <div class="form-group">
+        <label for="email">StudentName:</label>
+        <input type="email" class="form-control" id="txtStudentName">
+    </div>
+
+    <div class="form-group" style="padding-bottom: 60px;">
+        <label for="Title" class="control-label col-md-3">Ảnh sinh vien:<span class="required">*</span></label>
+        <div class="col-md-6">
+            <div class="input-icon right">
+                <input id="upload" class="form-control" type="file" name="upload" accept="image/*" multiple="multiple" />
+                <p style="color:red">Chọn từ 1 - 3 ảnh </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="Title" class="control-label col-md-3">ảnh đã chọn:<span class="required">*</span></label>
+        <div class="col-md-6">
+            <div class="input-icon right">
+                <div id="dvPreview">
+                </div>
+                <div id="divAddMoreImage" style="display:none;">
+                    <input type="file" id="fileaddMore" style="display:none">
+                    <a style="cursor:pointer;" onclick="openFileOption();"><i class="fa fa-plus-circle"></i>Thêm ảnh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ProductClassify">
+        <div class="row">
+            <div class="col-md-2"><input type="text" id="txtStudentName_0" value="" class="form-control" placeholder="Tên phân loại" /></div>
+            <div class="col-md-2"><input type="text" id="txtDateofBirth_0" value="" class="form-control" placeholder="Số lượng" /></div>
+            <div class="col-md-2"><input type="text" id="txtEamil_0" value="" class="form-control" placeholder="giá" /></div>
+            <div class="col-md-2"><input type="text" id="txtDiaChi_0" value="" class="form-control" placeholder="giá sale" /></div>
+            <div class="col-md-2"><a style="cursor:pointer;" onclick="ProductClassify_Add()"><i class="fa fa-plus-circle"></i>Thêm phân loại</a></div>
+
+        </div>
+
+    </div>
+
+</div>
+<button type="button" id="btnSave" class="btn btn-success">Thêm</button>
+
+<div id="Test_PartialView"></div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+
+            LoadData();
+
+            $("#btnSave").click(function () {
+
+                SaveData();
+            });
+
+            $('#upload').on('change', function () {
+                // statusEditAva = 1;
+                if (typeof (FileReader) != "undefined") {
+                    var dvPreview = $("#dvPreview");
+                    dvPreview.html("");
+                    var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+                    var index = 0;
+                    $($(this)[0].files).each(function () {
+                        var file = $(this);
+                        if (regex.test(file[0].name.toLowerCase())) {
+                            var reader = new FileReader();
+                            reader.onload = function (e) {
+                                var img = $("<img class='img_" + index + "'/> <span id='span_img_" + index + "'><a onclick='RemoveProductImage(" + index + ")'>Xóa</a></span> <br/>");
+                                img.attr("style", "height:250px;width: 250px");
+                                img.attr("src", e.target.result);
+                                //  console.log(e.target.result);
+                                dvPreview.append(img);
+                                index++;
+                            }
+                            reader.readAsDataURL(file[0]);
+                        } else {
+                            alert(file[0].name + " is not a valid image file.");
+                            dvPreview.html("");
+                            return false;
+                        }
+
+
+                    });
+                    $("#divAddMoreImage").show();
+                } else {
+                    alert("This browser does not support HTML5 FileReader.");
+                }
+            });
+
+
+
+        });
+
+        function ProductClassify_Add() {
+            var index_count = [];
+            $(".ProductClassify .row").each(function (index, value) {
+                index_count.push(index);
+            });
+            console.log(index_count.length);
+            var item_index = index_count.length;
+            console.log("item_index:" + item_index);
+            var html = "";
+            html += "<div class=\"row row_marging productClassify_Row_" + item_index + "\" >";
+            html += "  <div class=\"col-md-2\"><input type=\"text\" id=\"txtAttributeName_" + item_index + "\" value=\"\" class=\"form-control\" placeholder=\"Tên phân loại\" /></div>";
+            html += "   <div class=\"col-md-2\"><input type=\"text\" id=\"txtQuantity_" + item_index + "\" value=\"\" class=\"form-control\" placeholder=\"Số lượng\" /></div>";
+            html += "  <div class=\"col-md-2\"><input type=\"text\" id=\"txtPrice_" + item_index + "\" value=\"\" class=\"form-control\" placeholder=\"giá\" /></div>";
+            html += "   <div class=\"col-md-2\"><input type=\"text\" id=\"txtPriceSale_" + item_index + "\" value=\"\" class=\"form-control\" placeholder=\"giá sale\" /></div>";
+            html += "  <div class=\"col-md-2\"><a style=\"cursor:pointer;\" onclick=\"ProductClassify_Remove(" + item_index + ")\"><i class=\"fa fa-plus-circle\"></i>Xóa phân loại</a></div>";
+            html += "  </div>";
+            $(".ProductClassify").append(html);
+        }
+
+        function ProductClassify_Remove(remove_index) {
+            debugger;
+            $(".ProductClassify .productClassify_Row_" + remove_index).remove();
+        }
+
+        function SaveData() {
+
+            debugger;
+            var name = $("#txtProducName").val();
+            var cateId = $("#ddlCategoryID").val();
+
+            if (name == null || name == "") {
+                alert("studnet name không được trống!");
+                return;
+            }
+
+            var attributes = "";
+
+            $(".StudentClassify .row").each(function (index, value) {
+                var StudentClassifyName = $("#txtAttributeName_" + index).val();
+                var StudentClassifyQ = $("#txtQuantity_" + index).val();
+                var StudentClassifyPrice = $("#txtPrice_" + index).val();
+                var StudentClassifySalePrice = $("#txtPriceSale_" + index).val();
+
+                attributes += StudnetClassifyName + "," + StudentClassifyQ + "," + StudentClassifyPrice + "," + StudentClassifySalePrice + "_";
+
+            });
+
+            attributes = attributes != "" ? attributes.substr(0, attributes.length - 1) : attributes;
+            console.log("attributes:" + attributes);
+            var param = {
+                CategoryId: cateId,
+                ProductName: name,
+                AttributeValues: attributes,
+            };
+
+            $.ajax({
+                type: 'POST',
+                url: "/Home/SaveStudent",
+                data: param,
+                async: true,
+
+                dataType: "json",
+                success: function (rs) {
+                    if (rs.responseCode > 0) {
+
+                        LoadData();
+                    }
+                    alert(rs.responseMessage);
+                },
+                error(rs) {
+                    console.log(JSON.stringify(rs));
+                }
+            });
+        }
+
+        function AddStudent() {
+            var Student_name = $("#Name").val();
+            var Date_Of_Birth = $("#Age").val();
+            var email = $("#Email").val();
+            var address = $("#Address").val()
+            var student = {
+                Name: name,
+                Date_Of_Birth: age,
+                Email: email,
+                Address: address,
+                
+            };
+
+            $.ajax({
+                type: 'POST',
+                url: '/My/CreateStudent',
+                data: student,
+                async: true,
+                dataType: "json",
+                success: function (response) {
+                    alert("Student added successfully!");
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+    </script>
+    }
+iv>

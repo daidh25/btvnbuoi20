@@ -1,0 +1,8 @@
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\Web_MVC_QuanLySanPham\obj\Debug\net6.0\Web_MVC_QuanLySanPham.csproj.AssemblyReference.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\Web_MVC_QuanLySanPham\obj\Debug\net6.0\Web_MVC_QuanLySanPham.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\Web_MVC_QuanLySanPham\obj\Debug\net6.0\Web_MVC_QuanLySanPham.AssemblyInfoInputs.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\Web_MVC_QuanLySanPham\obj\Debug\net6.0\Web_MVC_QuanLySanPham.AssemblyInfo.cs
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\Web_MVC_QuanLySanPham\obj\Debug\net6.0\Web_MVC_QuanLySanPham.csproj.CoreCompileInputs.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\Web_MVC_QuanLySanPham\obj\Debug\net6.0\Web_MVC_QuanLySanPham.MvcApplicationPartsAssemblyInfo.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\Web_MVC_QuanLySanPham\obj\Debug\net6.0\Web_MVC_QuanLySanPham.RazorAssemblyInfo.cache
+D:\ASP\Asp.net\EProduct.DataAccess.NetCore\Web_MVC_QuanLySanPham\obj\Debug\net6.0\Web_MVC_QuanLySanPham.RazorAssemblyInfo.cs
